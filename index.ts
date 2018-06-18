@@ -1,3 +1,3 @@
-import { Datastore } from './source/datastore';
+import { Datastore, notifyCallback } from './source/datastore';
 
-export { Datastore };
+export { Datastore, notifyCallback };

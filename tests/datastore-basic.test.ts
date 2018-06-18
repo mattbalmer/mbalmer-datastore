@@ -66,6 +66,12 @@ describe(`Datastore - Basics`, () => {
     it(`should handle nested values`, () => {
       let store = new Datastore<MockData>(mock);
 
+      expect(store.get('doesNotExist', 'doesNotExist')).to.deep.equal('doesNotExist');
+    });
+
+    it(`should give a default value`, () => {
+      let store = new Datastore<MockData>(mock);
+
       expect(store.get('derp.b')).to.deep.equal(mock.derp.b);
     });
   });
