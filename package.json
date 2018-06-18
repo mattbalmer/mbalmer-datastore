@@ -8,6 +8,10 @@
     "test": "mocha -R spec tests/*.test.js",
     "test:watch": "npm test -- --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattbalmer/mbalmer-datastore.git"
+  },
   "dependencies": {
     "@types/chai": "^4.1.4",
     "@types/mocha": "^5.2.2",
