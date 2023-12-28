@@ -67,6 +67,6 @@ There are several ways to call subscribe:
 `datastore.subscribe(path, callback)`
 `datastore.subscribe(path, operation, callback)`
 
-Where `path` and `operation` are optional arguments that server to filter which operations call the given callback.
+Where `path` and `operation` are optional arguments that serve to filter which operations call the given callback.
 
 For example, if called with `datastore.subscribe('users', 'insert', callback)`, operations setting other paths, or setting the same path but with a different operation, would not trigger the callback.
